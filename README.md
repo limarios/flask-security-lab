@@ -3,7 +3,7 @@
 > A hands-on Flask application where **every vulnerability ships with its attack, its fix, and its detection.** Built to be studied, attacked, and defended.
 
 [![CI](https://github.com/limarios/flask-security-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/limarios/flask-security-lab/actions/workflows/ci.yml)
-[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![OWASP Top 10](https://img.shields.io/badge/OWASP%20Top%2010-7%2F10%20covered-orange.svg)](docs/threat-model.md)
@@ -98,7 +98,7 @@ When the WAF spots an attack, it emits a SOC-style log line — this is OWASP A0
 
 ## Quickstart
 
-### Local (Python 3.10+)
+### Local (Python 3.12+)
 
 ```bash
 git clone https://github.com/limarios/flask-security-lab.git

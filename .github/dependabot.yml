@@ -1,27 +1,28 @@
 version: 2
 updates:
-  # Python dependencies (root pyproject.toml / requirements.txt)
-  - package-ecosystem: "pip"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 10
-    labels:
-      - "dependencies"
-      - "python"
-    commit-message:
-      prefix: "build"
-      include: "scope"
+  # Python dependencies (pyproject.toml / requirements.txt at the root)
+  - package-ecosystem: pip
+    directory: /
+    schedule: {interval: weekly, day: monday, time: "06:00", timezone: America/Sao_Paulo}
+    open-pull-requests-limit: 5
+    labels: [dependencies, python]
+    commit-message: {prefix: chore, prefix-development: chore, include: scope}
+    groups:
+      minor-patch: {applies-to: version-updates, update-types: [minor, patch]}
+      security: {applies-to: security-updates, patterns: ["*"], update-types: [minor, patch]}
+
+  # Docker base image (Dockerfile at the root)
+  - package-ecosystem: docker
+    directory: /
+    schedule: {interval: monthly}
+    labels: [dependencies, docker]
+    commit-message: {prefix: chore, include: scope}
 
   # GitHub Actions workflow dependencies
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 10
-    labels:
-      - "dependencies"
-      - "github-actions"
-    commit-message:
-      prefix: "ci"
-      include: "scope"
+  - package-ecosystem: github-actions
+    directory: /
+    schedule: {interval: monthly}
+    labels: [dependencies, ci]
+    commit-message: {prefix: ci, include: scope}
+    groups:
+      actions: {patterns: ["*"]}

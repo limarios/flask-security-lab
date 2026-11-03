@@ -91,10 +91,10 @@ something outside the intentional lab flaws — we want to hear about it. Exampl
 **How to report:**
 
 1. **Do not** open a public issue describing the flaw.
-2. Use **GitHub Private Vulnerability Reporting** ("Report a vulnerability" under the
-   repository's *Security* tab) if enabled, **or**
-3. Contact the maintainer privately at the email listed on the maintainer's GitHub
-   profile / repository contact.
+2. Use **GitHub Private Vulnerability Reporting** — it is enabled for this
+   repository: open the *Security* tab and click "Report a vulnerability"
+   (<https://github.com/limarios/flask-security-lab/security/advisories/new>), **or**
+3. Email the maintainer privately at **contato@limarios.dev**.
 
 Please include reproduction steps, affected files, and the impact. We aim to
 acknowledge a valid report promptly and will coordinate a fix and disclosure timeline

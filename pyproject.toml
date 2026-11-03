@@ -7,7 +7,7 @@ name = "flask-security-lab"
 version = "1.0.0"
 description = "A hands-on Flask security lab: every vulnerability ships with its attack, its fix, and its detection. Red Team vs Blue Team."
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.12"
 license = { text = "MIT" }
 authors = [{ name = "Matheus Lima" }]
 keywords = ["security", "flask", "owasp", "red-team", "blue-team", "appsec", "education"]
@@ -16,9 +16,8 @@ classifiers = [
     "Intended Audience :: Education",
     "Topic :: Security",
     "Framework :: Flask",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
 ]
 dependencies = [
     "Flask>=3.1.0",
@@ -57,11 +56,11 @@ red_team = ["wordlists/*.txt"]
 
 [tool.black]
 line-length = 100
-target-version = ["py310", "py311", "py312"]
+target-version = ["py312", "py313"]
 
 [tool.ruff]
 line-length = 100
-target-version = "py310"
+target-version = "py312"
 src = ["src", "tests"]
 
 [tool.ruff.lint]
@@ -78,7 +77,7 @@ ignore = ["S101"]  # assert is fine in tests
 "tests/*" = ["S"]
 
 [tool.mypy]
-python_version = "3.10"
+python_version = "3.12"
 warn_unused_ignores = true
 warn_redundant_casts = true
 ignore_missing_imports = true

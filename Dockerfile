@@ -12,7 +12,7 @@
 # --- Stage 1: builder -------------------------------------------------------
 # Build a wheel for the project so the runtime image stays lean and free of
 # build tooling.
-FROM python:3.12-slim AS builder
+FROM python:3.13-slim AS builder
 
 WORKDIR /build
 
@@ -31,7 +31,7 @@ RUN python -m pip install --upgrade pip build \
     && python -m build --wheel --outdir /dist
 
 # --- Stage 2: runtime -------------------------------------------------------
-FROM python:3.12-slim AS runtime
+FROM python:3.13-slim AS runtime
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \

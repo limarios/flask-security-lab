@@ -8,6 +8,29 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+
+- **Python support**: minimum is now 3.12 (`requires-python = ">=3.12"`); CI matrix
+  moved from 3.10–3.12 to 3.12–3.13 (3.10 is end-of-life). `.python-version` pins
+  3.13 and the Docker image uses `python:3.13-slim`.
+- **CI**: GitHub Actions pinned by commit SHA, `timeout-minutes` on every job, and a
+  new `docker-build` job that builds the image (no push).
+- **Dependabot**: weekly grouped minor/patch updates for pip, monthly grouped
+  updates for GitHub Actions, and a new `docker` ecosystem for the base image.
+- **SECURITY.md**: Private Vulnerability Reporting is now enabled; the contact
+  email is stated explicitly.
+
+### Fixed
+
+- `requirements.txt` was encoded as UTF-16LE (despite its own comment saying
+  UTF-8), which made Dependabot fail with `dependency_file_not_evaluatable`.
+  It is now UTF-8 with LF line endings.
+
+### Added
+
+- `.editorconfig`, `.github/CODEOWNERS` and the `fix-byte-order-marker` /
+  `mixed-line-ending` pre-commit hooks.
+
 ## [1.0.0] - 2026-06-11
 
 Initial professional release of **Flask Security Lab**, an educational Red Team
