@@ -16,7 +16,7 @@ vulnerabilities are very welcome.
 
 ## Development environment
 
-Requires Python 3.11+.
+Requires Python 3.12+ (CI tests 3.12 and 3.13; `.python-version` pins 3.13).
 
 ```bash
 # 1. Clone and enter the repo
