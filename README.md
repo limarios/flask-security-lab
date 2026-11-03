@@ -180,4 +180,4 @@ Contributions welcome — see **[CONTRIBUTING.md](CONTRIBUTING.md)** for the dev
 
 ## License
 
-MIT © Matheus Lima — see [LICENSE](LICENSE).
+MIT © Matheus de Lima Rios — see [LICENSE](LICENSE).
