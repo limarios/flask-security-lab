@@ -165,4 +165,4 @@ Contribuições são bem-vindas — veja o **[CONTRIBUTING.md](CONTRIBUTING.md)*
 
 ## Licença
 
-MIT © Matheus Lima — veja [LICENSE](LICENSE).
+MIT © Matheus de Lima Rios — veja [LICENSE](LICENSE).

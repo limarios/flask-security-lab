@@ -9,7 +9,7 @@ description = "A hands-on Flask security lab: every vulnerability ships with its
 readme = "README.md"
 requires-python = ">=3.12"
 license = { text = "MIT" }
-authors = [{ name = "Matheus Lima" }]
+authors = [{ name = "Matheus de Lima Rios" }]
 keywords = ["security", "flask", "owasp", "red-team", "blue-team", "appsec", "education"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
