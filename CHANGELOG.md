@@ -8,6 +8,8 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-11-13
+
 ### Changed
 
 - **Python support**: minimum is now 3.12 (`requires-python = ">=3.12"`); CI matrix
@@ -59,5 +61,6 @@ vs. Blue Team security lab.
 - **Bilingual documentation** (English/Portuguese) with per-vulnerability
   walkthroughs.
 
-[Unreleased]: https://github.com/limarios/flask-security-lab/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/limarios/flask-security-lab/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/limarios/flask-security-lab/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/limarios/flask-security-lab/releases/tag/v1.0.0
