@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "flask-security-lab"
-version = "1.0.0"
+version = "1.1.0"
 description = "A hands-on Flask security lab: every vulnerability ships with its attack, its fix, and its detection. Red Team vs Blue Team."
 readme = "README.md"
 requires-python = ">=3.12"
